@@ -50,30 +50,18 @@
       data-header-sticky-theme="bg-white">
       <div class="container-fluid header__controls">
         <div class="row justify-content-between align-items-center">
-          <div class="col text-left header__col-left"><a class="logo" href="index.html">
+          <div class="col text-left header__col-left">
+            <a class="logo" href="index.html">
               <img src="img/content/logo.png" alt="" style="height: 50px;">
             </a>
           </div>
           <div class="col-auto text-center d-none d-lg-block">
             <ul class="menu">
-              <li><a href="index.html">首頁</a>
+              <li class="menu-item-has-children current-menu-ancestor"><a href="index.html">首頁</a>
               </li>
               <li><a href="about.html">關於</a>
               </li>
-              <!-- <li class="menu-item-has-children"><a href="#">團隊</a>
-                <ul class="sub-menu">
-                  <li><a href="musicfun.html">Chi's MusicFun</a>
-                  </li>
-                  <li><a href="techfun.html">Tech Fun</a>
-                  </li>
-                  <li><a href="artfun.html">Art Fun</a>
-                  </li>
-                  <li><a href="willnessfun.html">Wellness Fun</a>
-                  </li>
-                </ul>
-              </li> -->
-
-              <li><a href="acitivities.html">活動</a>
+              <li><a href="about.html">活動</a>
               </li>
               <li><a href="contacts.html">聯絡</a>
               </li>
@@ -86,12 +74,12 @@
             </div>
           </div>
           <div class="col d-none d-lg-block text-right header__col-right">
-            <ul class="social">
-              <!-- <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+            <!-- <ul class="social">
+              <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
               <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
               <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-              <li class="social__item"><a class="fa fa-behance" href="#"></a></li> -->
-            </ul>
+              <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+            </ul> -->
           </div>
         </div>
         <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
@@ -100,49 +88,23 @@
       <div class="header__wrapper-overlay-menu container-fluid bg-white">
         <div class="header__wrapper-menu">
           <ul class="menu-overlay js-menu-overlay">
-            <li><a href="index.html" data-letter="F">
+
+            <li><a href="index.html" data-letter="A" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">首頁</div>
               </a>
             </li>
-            <li><a href="about.html" data-letter="U">
+            <li><a href="about.html" data-letter="B" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">關於</div>
               </a>
             </li>
-            <!-- <li class="menu-item-has-children"><a href="#" data-letter="P">
-                <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                  data-split-text-type="lines, words, chars">團隊</div>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="musicfun.html" data-letter="F" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                      data-split-text-type="lines, words, chars">Chi's MusicFun</div>
-                  </a>
-                </li>
-                <li><a href="techfun.html" data-letter="U" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                      data-split-text-type="lines, words, chars">Tech Fun</div>
-                  </a>
-                </li>
-                <li><a href="artfun.html" data-letter="N" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                      data-split-text-type="lines, words, chars">Art Fun</div>
-                  </a>
-                </li>
-                <li><a href="willnessfun.html" data-letter="B" data-pjax-link="overlayMenu">
-                    <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                      data-split-text-type="lines, words, chars">Wellness Fun</div>
-                  </a>
-                </li>
-              </ul>
-            </li> -->
-            <li><a href="acitivities.html" data-letter="U" data-pjax-link="overlayMenu">
+            <li><a href="acitivities.html" data-letter="C" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">活動</div>
               </a>
             </li>
-            <li><a href="contacts.html" data-letter="N" data-pjax-link="overlayMenu">
+            <li><a href="contacts.html" data-letter="D" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">聯絡</div>
               </a>
@@ -154,12 +116,12 @@
           <div class="container-fluid">
             <div class="row justify-content-between">
               <div class="col-lg-4 text-left">
-                <ul class="social">
-                  <!-- <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                <!-- <ul class="social">
+                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
                   <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
                   <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li> -->
-                </ul>
+                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -332,7 +294,6 @@
           </div>
         </section>
         <!-- - section INTRO -->
-
         <!-- - section Director -->
 
         <section class="section section-content section_pt section_pb-xsmall bg-off-white director">
@@ -358,7 +319,6 @@
         </section>
 
         <!-- - section Director -->
-
         <!-- section HEADER #1 -->
         <section class="section section-content section_pt section_pb-xsmall bg-off-white"
           data-os-animation="data-os-animation">
@@ -375,7 +335,6 @@
           </div>
         </section>
         <!-- - section HEADER #1 -->
-
         <!-- section TEAM -->
         <section class="section section-team section_pb bg-off-white">
           <div class="container">

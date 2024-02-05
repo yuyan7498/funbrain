@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta content="telephone=no" name="format-detection" />
   <meta name="HandheldFriendly" content="true" />
-  <meta name="description" content="中華民國大腦智能發展協會官方網站：聯絡" />
+  <meta name="description" content="中華民國大腦智能發展協會官方網站：首頁" />
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i%7CPlayfair+Display:400,400i,700,700i%7CMaterial+Icons&amp;display=swap" />
   <link rel="stylesheet" type="text/css" href="css/vendor.css" />
@@ -46,10 +46,12 @@
     </div>
     <!-- - PAGE PRELOADER -->
     <!-- PAGE HEADER -->
-    <header class="header header_fixed js-sticky-header" data-header-animation="" data-header-sticky-theme="bg-white">
+    <header class="header header_fixed js-sticky-header header_color-white" data-header-animation=""
+      data-header-sticky-theme="bg-white">
       <div class="container-fluid header__controls">
         <div class="row justify-content-between align-items-center">
-          <div class="col text-left header__col-left"><a class="logo" href="index.html">
+          <div class="col text-left header__col-left">
+            <a class="logo" href="index.html">
               <img src="img/content/logo.png" alt="" style="height: 50px;">
             </a>
           </div>
@@ -61,53 +63,52 @@
           </div>
           <div class="col d-none d-md-block text-right header__col-right">
             <!-- <ul class="social">
-              <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-              <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-              <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-              <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-            </ul> -->
+                <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+              </ul> -->
           </div>
         </div>
         <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
         <!-- - back button -->
       </div>
-      <div class="header__wrapper-overlay-menu container-fluid bg-white">
+      <div class="header__wrapper-overlay-menu container-fluid bg-light">
         <div class="header__wrapper-menu">
           <ul class="menu-overlay js-menu-overlay">
-            <li><a href="index.html" data-letter="A">
+
+            <li><a href="index.html" data-letter="A" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">首頁</div>
               </a>
             </li>
-            <li><a href="about.html" data-letter="B">
+            <li><a href="about.html" data-letter="B" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">關於</div>
               </a>
             </li>
-            <li><a href="acitivities.html" data-letter="C">
+            <li><a href="acitivities.html" data-letter="C" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">活動</div>
               </a>
             </li>
             <li class="menu-item-has-children"><a href="#" data-letter="D">
-              <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                data-split-text-type="lines, words, chars">團隊</div>
-            </a>
-            <ul class="sub-menu">
-              <li><a href="musicfun.html" data-letter="A" data-pjax-link="overlayMenu">
-                  <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
-                    data-split-text-type="lines, words, chars">MusicFun</div>
-                </a>
-              </li>
-            </ul>
+                <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
+                  data-split-text-type="lines, words, chars">團隊</div>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="musicfun.html" data-letter="A" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
+                      data-split-text-type="lines, words, chars">MusicFun</div>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li><a href="contacts.html" data-letter="D">
+            <li><a href="contacts.html" data-letter="E" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text"
                   data-split-text-type="lines, words, chars">聯絡</div>
               </a>
             </li>
-
-
           </ul>
         </div>
         <!-- - menu overlay -->
@@ -116,21 +117,23 @@
             <div class="row justify-content-between">
               <div class="col-lg-4 text-center d-lg-none">
                 <!-- <ul class="social">
-                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
-                </ul> -->
+                    <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                    <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                    <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                    <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                  </ul> -->
               </div>
               <div class="col-lg-4 text-left">
-                <p class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">台北市大安區<br>大安路二段66號10樓之9</p>
+                <p class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  台北市大安區<br>大安路二段66號10樓之9</p>
               </div>
               <div class="col-lg-4 text-center">
                 <p class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a
                     href="mailto:support@artemsemkin.com">toby77house@yahoo.com.tw</a></p>
               </div>
               <div class="col-lg-4 text-right">
-                <p class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+886 918082339</p>
+                <p class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+886
+                  918082339</p>
               </div>
             </div>
           </div>
@@ -266,104 +269,317 @@
     <!-- - PAGE HEADER -->
     <div class="page-wrapper" data-barba="container">
       <main class="page-wrapper__content">
-        <div class="container-fluid container_xs-no-padding">
-          <!-- section MASTHEAD -->
-          <section class="section section-masthead section_pt-large text-center" data-os-animation="data-os-animation">
-            <div class="section-masthead__inner container">
-              <header class="row section-masthead__header justify-content-center">
-                <div class="col">
-                  <h1 class="js-text-to-fly split-text js-split-text section-masthead__heading"
-                    data-split-text-type="lines, words, chars" data-split-text-set="chars">聯絡</h1>
-                  <div class="section__headline"></div>
+        <!-- section MASTHEAD -->
+        <section class="section section-masthead section-fullheight text-center bg-dark color-white"
+          data-os-animation="data-os-animation">
+          <div class="section-masthead__inner section-fullheight__inner container">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col-lg-10">
+                <div class="subheading split-text js-split-text section-masthead__subheading"
+                  data-split-text-type="lines, words, chars" data-split-text-set="chars">FUN BRAIN ASSOCIASION</div>
+                <h1 class="js-text-to-fly split-text js-split-text section-masthead__heading"
+                  data-split-text-type="lines, words, chars" data-split-text-set="chars">MusicFun</h1>
+                <div class="section__headline"></div>
+              </div>
+              <div class="section-masthead__wrapper-scroll-down">
+                <div class="scroll-down js-scroll-down">
+                  <div class="scroll-down__circle-1"></div>
+                  <div class="scroll-down__line"></div>
+                  <div class="scroll-down__circle-2"></div>
                 </div>
-              </header>
+              </div>
+            </header>
+          </div>
+          <div class="section-masthead__background section-masthead__background_fullscreen"
+            data-art-parallax="background" data-art-parallax-factor="0.1">
+            <div class="art-parallax__bg lazy-bg" data-src="img/assets/sectionBlog/師生發表會.jpg"></div>
+            <div class="overlay overlay_dark section-masthead__overlay"></div>
+          </div>
+        </section>
+        <!-- - section MASTHEAD -->
+        <!-- section CONTENT #1 -->
+        <section class="section section-content section_pt section_pb text-center bg-off-white" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 section-content__header">
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <h4 class="heading-light">世界這麼大 你準備好怎麼學了嗎？</h4>
+                </div>
+                <div class="section__headline"></div>
+              </div>
             </div>
-          </section>
-          <!-- - section MASTHEAD -->
-          <!-- section CONTACTS -->
-          <section class="section section-contacts bg-white section_pb" style="padding: 50px;">
-            <div class="container" style="height: 100%;">
-              <div class="row justify-content-center align-items-center" style="height: 100%;">
-                <div class="col-lg-3">
-                  <div class="figure-contact">
-                    <div class="figure-contact__icon material-icons">near_me</div>
-                    <div class="figure-contact__item">台北市大安區</div>
-                    <div class="figure-contact__item">大安路二段66號10樓之9</div>
+          </div>
+        </section>
+        <!-- - section CONTENT #1 -->
+        <!-- section CONTENT #1 -->
+        <section class="section section-content section_mt section_mb" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 section-content__header section-content__header_mb">
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <h4>音樂訓練如何改變大腦？</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-lg-2 section-content__content">
+                <div class="section__headline section-content__headline"></div>
+              </div>
+
+              <div class="col-lg-4 section-content__content">
+                <div class="section-content__subheading subheading split-text js-split-text"
+                  data-split-text-type="lines" data-split-text-set="lines"><h5>醫學領域</h5></div>
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <p>音樂治療有助於恢復語言障礙和ADHD，改善早產兒的神經功能，提升威廉姆斯綜合症患者的治療效果。</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 section-content__content">
+                <div class="section-content__subheading subheading split-text js-split-text"
+                  data-split-text-type="lines" data-split-text-set="lines"><h5>科學方面</h5></div>
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <p>學習樂器優化大腦和神經系統的發展，早期音樂培訓能增大大腦中央結構，增強雙手協調能力。</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 section-content__content">
+                <div class="section-content__subheading subheading split-text js-split-text"
+                  data-split-text-type="lines" data-split-text-set="lines"><h5>教育應用</h5></div>
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <p>結合音樂的策略加強對詞彙和具體名詞的記憶，通過聽覺訓練提高學習效果和效率，顯示出聽覺系統與其他系統的深度整合。</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 section-content__content">
+                <div class="section-content__subheading subheading split-text js-split-text"
+                  data-split-text-type="lines" data-split-text-set="lines"><h5>聽覺與語言發展</h5></div>
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <p>聽覺的訓練，可促進語言相同腦區的激活，能使學習更精準也更有效率</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!-- - section CONTENT #1 -->
+        <!-- section IMAGE #1 -->
+        <section class="section section-image section_w-container-left section_h-800 section_mt section_mb">
+          <div class="section-image__wrapper" data-art-parallax="background" data-art-parallax-factor="0.1">
+            <div class="art-parallax__bg lazy-bg" data-src="img/assets/sectionBlog/音樂公益講座.jpg"></div>
+          </div>
+          <div class="section-image__caption section-image__caption-vertical-right">琦琦老師多年來致力於推動音樂教育發展</div>
+        </section>
+        <!-- - section IMAGE #1 -->
+        <!-- section HEADER #1 -->
+        <section class="section section-content section_pt section_pb-xsmall" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 section-content__header">
+                <div class="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span></span></div>
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <h3>音樂教育對我們的好處</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- - section HEADER #1 -->
+        <!-- section FEATURES -->
+        <section class="section section-features section_pb">
+          <div class="container">
+            <div class="grid grid_fluid-3 js-grid" data-grid-columns="3" data-grid-columns-tablet="2" data-grid-columns-mobile="1">
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 grid__sizer js-grid__sizer"></div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-music-note"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">音樂能力</h5>
                   </div>
                 </div>
-                <div class="col-lg-3">
-                  <div class="figure-contact">
-                    <div class="figure-contact__icon material-icons">phone</div>
-                    <div class="figure-contact__item">+886 918082339</div>
-                    <div class="figure-contact__item"></div>
+              </div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-spell-check"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">更強的語言能力</h5>
                   </div>
                 </div>
-                <div class="col-lg-3">
-                  <div class="figure-contact">
-                    <div class="figure-contact__icon material-icons">mail</div>
-                    <div class="figure-contact__item"><a href="mailto:toby77house@yahoo.com.tw">toby77house@yahoo.com.tw</a>
-                    </div>
+              </div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-pie-chart"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">大腦皮質體積增加</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-eye"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">更快的反應能力</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-diamond"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">更高的智商</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                <div class="figure-feature">
+                  <div class="figure-feature__corner figure-feature__corner_top"></div>
+                  <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                  <div class="figure-feature__icon lnr lnr-pencil"></div>
+                  <div class="figure-feature__header">
+                    <h5 class="figure-feature__heading">從容學習</h5>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- - section CONTACTS -->
-        </div>
-      </main>
-      <footer class="footer container-fluid">
-        <div class="footer__area-primary">
-          <div class="footer__row row">
-            <div class="col-lg-4 text-left footer__column">
-              <section class="widget widget_cassio_logo"><a class="logo" href="index.html">
-                  <div class="logo__text"><span class="logo__text-title">FunBrain</span></div>
-                </a>
-                <p>全方面的教育、保健服務平台</p>
-              </section>
-            </div>
-            <div class="col-lg-4 text-center footer__column">
-              <section class="widget widget_cassio_social">
-                <ul class="social">
-                  <!-- <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
-                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li> -->
-                </ul>
-              </section>
-            </div>
-            <div class="col-lg-4 text-right footer__column">
-              <section class="widget widget_text">
-                <div class="textwidget">
-                  <p>+886 918082339</p>
-                  <p><a href="mailto:toby77house@yahoo.com.tw">toby77house@yahoo.com.tw</a></p>
+          </div>
+        </section>
+        <!-- - section FEATURES -->
+        <!-- section CONTENT #2 -->
+        <section class="section section-content section_mt section_mb" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-5 section-content__header">
+                <div class="section__headline section-content__headline"></div>
+              </div>
+              <div class="col-lg-5 section-content__content">
+                <div class="split-text js-split-text" data-split-text-type="words, lines" data-split-text-set="lines">
+                  <p></p>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="footer__area-secondary">
-          <div class="footer__row row justify-content-between align-items-center">
-            <div class="col-lg-6 order-lg-2 footer__column text-right">
-              <section class="widget widget_cassio_menu_inline">
-                <ul class="menu">
-                  <li><a href="#">使用條款</a>
-                  </li>
-                  <li><a href="#">隱私政策</a>
-                  </li>
-                  <li><a href="#">Cookies之使用</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-lg-6 order-lg-1 footer__column text-left">
-              <section class="widget widget_cassio_copyright"><small class="copyright">© 2023 <a
-                    href="index.html">中華民國大腦智能發展協會</a>版權所有</small></section>
+        </section>
+        <!-- - section CONTENT #2 -->
+        <!-- section IMAGE #2 -->
+        <section class="section section-image section_w-container-right section_h-800 section_mt section_mb">
+          <div class="section-image__wrapper" data-art-parallax="background" data-art-parallax-factor="0.1">
+            <div class="art-parallax__bg lazy-bg" data-src="img/assets/sectionBlog/鋼琴大解構.jpg"></div>
+          </div>
+          <div class="section-image__caption section-image__caption-vertical-left">鋼琴大解構</div>
+        </section>
+        <!-- - section IMAGE #2 -->
+        <!-- section CONTENT #3 -->
+        <section class="section section-content section_mt section_mb" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-5 section-content__header">
+                <div class="split-text js-split-text" data-split-text-type="words, lines" data-split-text-set="lines">
+                  <p></p>
+                </div>
+              </div>
+              <div class="col-lg-5 section-content__content">
+                <div class="section__headline section-content__headline section-content__headline_right"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </section>
+        <!-- - section CONTENT #3 -->
+        <!-- section SLIDER #1 -->
+        <section
+          class="section section-slider section-offset bg-accent-secondary-3 color-white section_pt-small section_pb-small">
+          <div class="section-offset__content">
+            <div class="swiper-container slider slider-images js-slider-images slider-images_footer-top"
+              data-centered-slides="true">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider__slide">
+                  <div class="slider__slide-inner"><img class="swiper-lazy" data-src="img/assets/sectionBlog/師生發表會.jpg"
+                      src="#" alt="" /></div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="slider__slide-inner"><img class="swiper-lazy" data-src="img/assets/sectionBlog/鋼琴大解構.jpg"
+                      src="#" alt="" /></div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="slider__slide-inner"><img class="swiper-lazy" data-src="img/assets/sectionBlog/善牧.jpg"
+                      src="#" alt="" /></div>
+                </div>
+              </div>
+              <div class="container-fluid slider-images__footer">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-auto col-md-4 text-left slider__footer-col order-md-1 order-1">
+                    <div class="slider__arrows">
+                      <div class="slider__arrow js-slider-images__prev"><i
+                          class="material-icons">keyboard_arrow_left</i></div>
+                      <div class="slider__arrows-divider"></div>
+                      <div class="slider__arrow js-slider-images__next"><i
+                          class="material-icons">keyboard_arrow_right</i></div>
+                    </div>
+                  </div>
+                  <!-- - slider nav arrows -->
+                  <div class="col-12 col-md-4 text-center slider__footer-col order-md-2 order-0">
+                    <div class="slider-images__captions">
+                      <div class="swiper-container slider-images__slider-captions js-slider-images__captions">
+                        <div class="swiper-wrapper slider-images__slider-captions-wrapper">
+                          <div class="swiper-slide slider-images__slider-captions-slide">
+                            <div class="slider-images__caption">琦琦鋼琴師生發表會</div>
+                          </div>
+                          <div class="swiper-slide slider-images__slider-captions-slide">
+                            <div class="slider-images__caption">鋼琴大解構</div>
+                          </div>
+                          <div class="swiper-slide slider-images__slider-captions-slide">
+                            <div class="slider-images__caption">108課綱與音樂公益講座</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto col-md-4 text-right slider-images__footer-col order-md-3 order-2">
+                    <div class="slider__progress">
+                      <div
+                        class="swiper-container slider__counter slider__counter_current js-slider-images__counter-current">
+                        <div class="swiper-wrapper"></div>
+                      </div>
+                      <div class="slider__counter-divider"></div>
+                      <div class="slider__counter slider__counter_total js-slider-images__counter-total">001</div>
+                    </div>
+                  </div>
+                  <!-- - slider counter -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- - section SLIDER #1 -->
+        <!-- section CONTENT #4 -->
+        <section class="section section-content section_mt section_mb" data-os-animation="data-os-animation">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-5 section-content__header">
+                <div class="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                  <h4>FUN MUSIC FUN BRAIN</h4>
+                </div>
+              </div>
+              <div class="col-lg-5 section-content__content">
+                <div class="split-text js-split-text" data-split-text-type="words, lines" data-split-text-set="lines">
+                  <p>讓我們一起攜手，為孩子找到起飛的力量</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- - section CONTENT #4 -->
+      </main>
     </div>
-    <div class="transition-curtain bg-off-white"></div>
+    <div class="transition-curtain bg-light"></div>
     <canvas id="js-webgl"></canvas>
   </div>
   <!-- VENDOR SCRIPTS -->
